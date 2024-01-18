@@ -35,7 +35,7 @@ app.get("/get-form", (req, res) => {
     `);
 });
 
-app.post("/api/form_submit", (req, res) => {
+app.get("/api/form_submit", (req, res) => {
     console.log(req.body);
     return res.send("Form submitted successfully");
 });

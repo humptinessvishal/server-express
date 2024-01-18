@@ -5,7 +5,7 @@ const port = 8000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.get("/", (req, res) => {
+app.use("/", (req, res) => {
     console.log("GET / working");
     return res.send("Server App is running");
 });
